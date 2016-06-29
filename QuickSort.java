@@ -1,6 +1,7 @@
 
 public class QuickSort {
 
+	// 快速排序采用递归的方式，首先先找到一个基数key，将小于key的值移至key的左边，大于key的值移至key的右边，并将key移至正确的位置，以此递归，直至排序完成
 	public static int[] quickSort(int[] sort, int low, int hight) {
 		int position;
 		if (low < hight) {
@@ -12,6 +13,7 @@ public class QuickSort {
 	}
 
 	private static int point(int[] sort, int low, int hight) {
+		// 选取基数key，取sort[low]，即第一个值
 		int key = sort[low];
 		while (low < hight) { // 从两端向中间扫描，直至low == hight
 			// 首先自右向左移动，当遇到小于key的值得时候跳出循环
