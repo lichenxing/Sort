@@ -1,7 +1,7 @@
 
 public class InsertSort {
 
-	// 插入排序（递增）假设sort[0...i]为有序，将sort[i+1...size]中遍历值与sort[0...i]中的值比较，插入应该在的位置，并将后面的值后移
+	//   插入排序（递增）假设sort[0...i]为有序，将sort[i+1...size]中遍历值与sort[0...i]中的值比较，插入应该在的位置，并将后面的值后移
 	public static int[] sort(int[] sort) {
 		int[] sorts = new int[sort.length + 1];
 		System.arraycopy(sort, 0, sorts, 1, sort.length);
